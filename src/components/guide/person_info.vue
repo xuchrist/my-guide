@@ -11,19 +11,29 @@
 <script>
 import vHeader from './header'
 import vFooter from './footer'
+import {
+  getPersonInfo
+} from '@/api/guide_api'
 export default {
-  name:"person_info",
-   components: {
+  name: "person_info",
+  components: {
     vFooter,
     vHeader
   },
-  data () {
-      return {
-          
-      }
+  data() {
+    return {
+
+    }
   },
-  created () {
-      
+  created() {
+    getPersonInfo()
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
   }
 }
+
 </script>

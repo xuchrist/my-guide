@@ -2,8 +2,7 @@
   <yd-layout>
      
     <v-header slot="navbar" title="主页" > 
-    </v-header>
-
+    </v-header> 
     <yd-slider autoplay="3000">
       <yd-slider-item>
         <a href="http://www.ydcss.com">
@@ -27,18 +26,17 @@
         <span slot="text">{{item.name}}</span>
       </yd-grids-item>
     </yd-grids-group>
-    <yd-rollnotice direction="up" align="right" height="50" autoplay="2000" class="demo-small-pitch">
+    <yd-rollnotice direction="up" align="right" height="150" autoplay="2000" class="demo-small-pitch">
       <yd-rollnotice-item>
-        <span style="color:#F00;"> 荐 </span>荣耀V9 3月超级钜惠！
-        <br/>
+      
+            <span style="color:#F00;"> 荐 </span>荣耀V9 3月超级钜惠！
+         
       </yd-rollnotice-item>
       <yd-rollnotice-item>
-        <span style="color:#F00;"> 荐 </span>3.23京东超级品牌日格力盛典
-        <br>
+        <span style="color:#F00;"> 荐 </span>3.23京东超级品牌日格力盛典 
       </yd-rollnotice-item>
       <yd-rollnotice-item>
-        <span style="color:#F00;"> 荐 </span>京东服饰 早春新品低至7折
-        <br>
+        <span style="color:#F00;"> 荐 </span>京东服饰 早春新品低至7折 
       </yd-rollnotice-item>
     </yd-rollnotice>
     <!-- <yd-tabbar slot="tabbar">
