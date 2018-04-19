@@ -17,9 +17,9 @@
        <yd-tabbar-item title="个人中心" link="/guide_person_info" :active="index==5" >
         <i slot="icon" class="iconfont icon-gerenzhongxin1"></i>
       </yd-tabbar-item>
-      <yd-tabbar-item title="更多" link="/guide_more" :active="index==6" >
+      <!-- <yd-tabbar-item title="更多" link="/guide_more" :active="index==6" >
         <i slot="icon" class="iconfont icon-gengduo"></i>
-      </yd-tabbar-item>
+      </yd-tabbar-item> -->
     </yd-tabbar>
 </template>
 <script>
