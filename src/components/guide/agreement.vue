@@ -1,11 +1,8 @@
 
 <template>
-   <yd-layout>
-    <yd-navbar slot="navbar" title="协议">
-      <router-link to="/guide_home" slot="left">
-        <yd-navbar-back-icon>返回</yd-navbar-back-icon>
-      </router-link>
-    </yd-navbar>
+   <yd-layout> 
+    <v-header slot="navbar" title="协议" to="/guide_home" > 
+    </v-header>
     <h1>协议</h1>
     
      <p>
@@ -25,8 +22,12 @@
 </template>
 
 <script>
+import vHeader from './header'
 export default {
   name:"agreement",
+  components: {
+      vHeader
+  },
   data(){
       return {
 

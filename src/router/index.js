@@ -6,7 +6,7 @@ Vue.use(Router)
 export default new Router({
   routes: [, {
       path: '/',
-      name: 'guide_home',
+      name: 'index',
       component: resolve => require(['@/components/guide/home'], resolve)
     },
     //admin
@@ -51,11 +51,7 @@ export default new Router({
       path: '/admin_login',
       name: 'admin_login',
       component: resolve => require(['@/components/admin/login'], resolve)
-    }, {
-      path: '/admin_visitor_info',
-      name: 'admin_visitor_info',
-      component: resolve => require(['@/components/admin/visitor_info'], resolve)
-    }, {
+    },  {
       path: '/admin_visitor_list',
       name: 'admin_visitor_list',
       component: resolve => require(['@/components/admin/visitor_list'], resolve)
@@ -71,11 +67,7 @@ export default new Router({
       path: '/admin_visitor_info',
       name: 'admin_visitor_info',
       component: resolve => require(['@/components/admin/visitor_info'], resolve)
-    }, {
-      path: '/admin_visitor_list',
-      name: 'admin_visitor_list',
-      component: resolve => require(['@/components/admin/visitor_list'], resolve)
-    }, {
+    },   {
       path: '/admin_words_setting',
       name: 'admin_words_setting',
       component: resolve => require(['@/components/admin/words_setting'], resolve)

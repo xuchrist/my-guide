@@ -1,10 +1,9 @@
 <template>
   <yd-layout>
-    <yd-navbar slot="navbar" title="主页">
-      <router-link to="#" slot="left">
-        <yd-navbar-back-icon>返回</yd-navbar-back-icon>
-      </router-link>
-    </yd-navbar>
+     
+    <v-header slot="navbar" title="主页" > 
+    </v-header>
+
     <yd-slider autoplay="3000">
       <yd-slider-item>
         <a href="http://www.ydcss.com">
@@ -42,7 +41,7 @@
         <br>
       </yd-rollnotice-item>
     </yd-rollnotice>
-    <yd-tabbar slot="tabbar">
+    <!-- <yd-tabbar slot="tabbar">
       <yd-tabbar-item title="主页" link="/guide_home" active>
         <i slot="icon" class="iconfont icon-zhuye"></i>
       </yd-tabbar-item>
@@ -56,18 +55,28 @@
       <yd-tabbar-item title="提现" link="/guide_cash_list" dot>
         <i slot="icon" class="iconfont icon-tixian"></i>
       </yd-tabbar-item>
-      <yd-tabbar-item title="更多" link="/guide_agreement">
+       <yd-tabbar-item title="个人中心" link="/guide_person_info">
+        <i slot="icon" class="iconfont icon-gerenzhongxin1"></i>
+      </yd-tabbar-item>
+      <yd-tabbar-item title="更多" link="/guide_more">
         <i slot="icon" class="iconfont icon-gengduo"></i>
       </yd-tabbar-item>
-    </yd-tabbar>
+    </yd-tabbar> -->
+    <v-footer  slot="tabbar"  index="1" ></v-footer>
   </yd-layout>
 
 </template>
 
 
 <script>
+import vHeader from './header'
+import vFooter from './footer'
 export default {
   name: "home",
+  components: {
+    vFooter,
+    vHeader
+  },
   data() {
     return {
       list: [
