@@ -43,17 +43,17 @@
     <yd-tabbar-item title="主页" link="/" active>
       <i slot="icon" class="demo-icons-weixin"></i>
     </yd-tabbar-item>
-    <yd-tabbar-item title="测试1" link="/test1">
+    <yd-tabbar-item title="评论查询" link="/test1">
       <i slot="icon" class="demo-icons-weixin"></i>
       <yd-badge slot="badge" type="danger">2</yd-badge>
     </yd-tabbar-item>
-    <yd-tabbar-item title="测试2" link="/test2">
+    <yd-tabbar-item title="投诉查询" link="/test2">
       <i slot="icon" class="demo-icons-contact"></i>
     </yd-tabbar-item>
-    <yd-tabbar-item title="测试3" link="/test3" dot>
+    <yd-tabbar-item title="申请提现" link="/test3" dot>
       <i slot="icon" class="demo-icons-discover"></i>
     </yd-tabbar-item>
-    <yd-tabbar-item title="测试4" link="/test4">
+    <yd-tabbar-item title="提现记录" link="/test4">
       <i slot="icon" class="demo-icons-me"></i>
     </yd-tabbar-item>
   </yd-tabbar>
@@ -71,28 +71,23 @@ export default {
     return {
       list: [{
           icon: 'demo-icons-button',
-          name: 'Button',
+          name: '评论查询',
           link: '/button'
         },
         {
           icon: 'demo-icons-dialog',
-          name: 'Dialog',
+          name: '投诉查询',
           link: '/dialog'
         },
         {
           icon: 'demo-icons-cell',
-          name: 'Cell',
+          name: '申请提现',
           link: '/cell'
         },
         {
           icon: 'demo-icons-icons',
-          name: 'Icons',
+          name: '提现记录',
           link: '/icons'
-        },
-        {
-          icon: 'demo-icons-grids',
-          name: 'Grids',
-          link: '/grids'
         } 
 
       ]

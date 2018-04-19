@@ -6,8 +6,8 @@ Vue.use(Router)
 export default new Router({
   routes: [, {
       path: '/',
-      name: 'visitors_home',
-      component: resolve => require(['@/components/visitors/home'], resolve)
+      name: 'guide_home',
+      component: resolve => require(['@/components/guide/home'], resolve)
     },
     //admin
     {
@@ -117,6 +117,10 @@ export default new Router({
       path: '/guide_person_info',
       name: 'guide_person_info',
       component: resolve => require(['@/components/guide/person_info'], resolve)
+    }, {
+      path: '/guide_more',
+      name: 'guide_more',
+      component: resolve => require(['@/components/guide/more'], resolve)
     }
     //visitors
     , {

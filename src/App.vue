@@ -22,5 +22,6 @@ export default {
 </script>
 
 <style>
- @import "./assets/css/demo.css";
+  @import "./assets/css/demo.css"; 
+  @import "./assets/fonts/iconfont.css";
 </style>

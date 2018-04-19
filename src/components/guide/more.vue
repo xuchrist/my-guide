@@ -1,12 +1,15 @@
 
 <template>
    <yd-layout>
-    <yd-navbar slot="navbar" title="投诉列表">
+    <yd-navbar slot="navbar" title="更多">
       <router-link to="/guide_home" slot="left">
         <yd-navbar-back-icon>返回</yd-navbar-back-icon>
       </router-link>
     </yd-navbar>
-   
+     
+        <div>
+            暂无功能
+        </div>
     <yd-tabbar slot="tabbar">
       <yd-tabbar-item title="主页" link="/guide_home" >
         <i slot="icon" class="iconfont icon-zhuye"></i>
@@ -29,7 +32,7 @@
 </template> 
 <script>
 export default {
-  name:"complain_list",
+  name:"more",
   data () {
     return {
       
