@@ -1,8 +1,7 @@
 
 
 <template>
-   <yd-layout>
-   
+   <yd-layout> 
      <v-header slot="navbar" title="个人中心" to="/guide_home" > 
     </v-header>
 
