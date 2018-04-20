@@ -82,6 +82,10 @@ export default new Router({
       name: 'guide_cash_info',
       component: resolve => require(['@/components/guide/cash_info'], resolve)
     }, {
+      path: '/guide_cash',
+      name: 'guide_cash',
+      component: resolve => require(['@/components/guide/cash'], resolve)
+    }, {
       path: '/guide_cash_list',
       name: 'guide_cash_list',
       component: resolve => require(['@/components/guide/cash_list'], resolve)

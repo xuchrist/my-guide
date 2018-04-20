@@ -11,7 +11,7 @@
         <i slot="icon" class="iconfont icon-tousu"></i>
           <yd-badge v-show="plainCount>0"  slot="badge" type="danger">{{plainCount}}</yd-badge>
       </yd-tabbar-item>
-      <yd-tabbar-item title="提现" link="/guide_cash_list" :dot="tip" :active="index==4" >
+      <yd-tabbar-item title="提现" link="/guide_cash" :dot="tip" :active="index==4" >
         <i slot="icon" class="iconfont icon-tixian"></i>
       </yd-tabbar-item>
        <yd-tabbar-item title="个人中心" link="/guide_person_info" :active="index==5" >
