@@ -1,4 +1,14 @@
+<template>
+   <yd-layout>
+    <v-header slot="navbar" :title="'详情'" to="/guide_complain_list">
+    </v-header> 
+   </yd-layout>
+</template>
+
+
 <script>
+import vFooter from './footer'
+import vHeader from './header'
 export default {
   name:"complain_info",
   data () {
@@ -6,8 +16,12 @@ export default {
       
     }
   },
+  components: {
+    vHeader
+  },
   created () {
-    
+     this.obj=this.$route.query.obj;
+     console.log("complain info"+ JSON.stringify(this.obj));
   }
 }
 </script>
