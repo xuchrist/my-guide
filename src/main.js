@@ -10,13 +10,13 @@ import 'vue-ydui/dist/ydui.rem.css';
 /* 使用px：import 'vue-ydui/dist/ydui.px.css'; */
 
 import Vuex from 'vuex';
-import axios from 'axios';
+import axios from 'axios'; 
+ 
 
-Vue.config.productionTip = false
-
+Vue.config.productionTip = false 
 Vue.use(YDUI);
 Vue.use(Vuex);
-
+ 
 const store = new Vuex.Store({
   state: {
       isLoading: false
