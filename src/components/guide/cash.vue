@@ -4,12 +4,12 @@
     </v-header>
       <yd-cell-group>
       <yd-cell-item arrow>
-            <yd-icon slot="icon" name="order" size=".42rem"></yd-icon>
+            <i slot="icon" class="iconfont icon-nongyeyinhang- cash_icon" ></i>
             <div slot="left">
-              <div>
+              <div class="cash_content">
                  农业银行 (尾号9372储蓄卡)
               </div>
-              <div>
+              <div class="cash_content">
                  该卡提现额度： 0.00元
               </div>
               </div> 
@@ -43,6 +43,13 @@
   }
  .cash_all{
    color: #268ffd
+ }
+ .cash_icon{
+    font-size: 2.42em;
+    color: green;
+ }
+ .cash_content{
+     margin: 1em 0.5em
  }
 </style>
 
