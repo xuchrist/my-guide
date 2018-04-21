@@ -1,6 +1,6 @@
 <template>
   <yd-layout>
-    <v-header slot="navbar" :title="'提现'" to="/guide_home"  >
+    <v-header slot="navbar" :title="'提现'" to="/guide_home"  rightto="/guide_cash_list" >
     </v-header>
       <yd-cell-group>
       <yd-cell-item arrow>

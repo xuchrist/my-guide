@@ -73,7 +73,7 @@
           {
             icon: "iconfont icon-tixian",
             name: "提现",
-            link: "/guide_cash_list"
+            link: "/guide_cash"
           }
         ]
       };

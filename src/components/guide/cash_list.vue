@@ -1,6 +1,6 @@
 <template>
   <yd-layout>
-    <v-header slot="navbar" title="提现列表" to="/guide_home">
+    <v-header slot="navbar" title="提现列表" to="/guide_cash">
     </v-header>
 
 
@@ -26,8 +26,7 @@
               <div style="margin:0.5em ">{{item.time|dateFrm}}</div>
             </div>
 
-          </yd-cell-item>
-
+          </yd-cell-item> 
         </yd-cell-group>
       </yd-tab-panel>
       <yd-tab-panel label="转入">
@@ -62,17 +61,11 @@
 
         </yd-cell-group>
       </yd-tab-panel>
-    </yd-tab>
-
-
+    </yd-tab> 
     <v-footer slot="tabbar" index="4"></v-footer>
   </yd-layout>
 </template>
-
-
-
-
-
+ 
 <script>
 
 import moment from 'moment'
