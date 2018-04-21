@@ -1,15 +1,14 @@
 <template>
       <yd-layout>
-    <v-header slot="navbar" :title="'投诉'" to="/visitors_home">
-    </v-header>
-     <v-footer slot="tabbar" index="4"></v-footer>
+    <v-header slot="navbar" :title="'历史记录'" to="/visitors_home">
+    </v-header> 
   </yd-layout>
 </template>
 <script>
 import vFooter from './footer'
 import vHeader from './header'
 export default {
-  name:'complain',
+  name:'guide_history',
   components: {
       vHeader,
       vFooter

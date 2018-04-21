@@ -60,20 +60,39 @@ export default {
   data() {
     return {
       list: [
+         {
+          icon: "iconfont icon-sousuo",
+          name: "搜索",
+          link: "/visitors_search"
+        }
+        ,
         {
           icon: "iconfont icon-pinglun",
           name: "评论",
-          link: "/guide_comment_list"
+          link: "/visitors_comment"
         },
         {
           icon: "iconfont icon-tousu",
           name: "投诉",
-          link: "/guide_complain_list"
+          link: "/visitors_complain"
         },
         {
           icon: "iconfont icon-tixian",
-          name: "提现",
-          link: "/guide_cash"
+          name: "充值",
+          link: "/visitors_pays"
+        }
+        ,
+        {
+          icon: "iconfont icon-xinwen",
+          name: "新闻",
+          link: "/visitors_news_list"
+        }
+        ,
+       
+        {
+          icon: "iconfont icon-lishijiluweijihuo",
+          name: "搜索记录",
+          link: "/visitors_guide_history"
         }
       ]
     };

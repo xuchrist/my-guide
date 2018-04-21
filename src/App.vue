@@ -23,6 +23,6 @@ export default {
 
 <style>
   @import "./assets/css/demo.css"; 
-    @import "http://at.alicdn.com/t/font_634628_mpc5qmvqtowdn29.css"; 
+    @import "http://at.alicdn.com/t/font_634628_hn5o4ijdsbz3q5mi.css"; 
   /* @import "./assets/fonts/iconfont.css"; */
 </style>

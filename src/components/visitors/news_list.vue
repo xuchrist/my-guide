@@ -1,25 +1,61 @@
 <template>
-  <yd-layout> 
-    <v-header slot="navbar" title="投诉列表" to="/guide_home">
+  <yd-layout>
+    <v-header slot="navbar" title="新闻列表" to="/visitors_home">
     </v-header>
-    <yd-list theme=4>
-      <yd-list-item v-for="(item, key) in list" :key="key"  @click.native="goDetail(item)">
-        <img slot="img" :src="item.img">
-        <span slot="title">{{item.title}}</span>
-        <yd-list-other slot="other">
-          <div  class="left">
-            <span class="demo-list-price">
-              <em>¥</em>{{item.price}}</span>
-            <span class="demo-list-del-price">¥{{item.w_price}}</span>
-          </div>
-          <div class="right">content</div>
-        </yd-list-other>
-      </yd-list-item>
-    </yd-list>
+    <yd-tab>
+      <yd-tab-panel label="城市新闻">
+        <yd-list theme=4>
+          <yd-list-item v-for="(item, key) in list" :key="key" @click.native="goDetail(item)">
+            <img slot="img" :src="item.img">
+            <span slot="title">{{item.title}}</span>
+            <yd-list-other slot="other">
+              <div class="left">
+                <span class="demo-list-price">
+                  <em>¥</em>{{item.price}}</span>
+                <span class="demo-list-del-price">¥{{item.w_price}}</span>
+              </div>
+              <div class="right">content</div>
+            </yd-list-other>
+          </yd-list-item>
+        </yd-list>
+      </yd-tab-panel>
+      <yd-tab-panel label="景区新闻">
+        <yd-list theme=4>
+          <yd-list-item v-for="(item, key) in list" :key="key" @click.native="goDetail(item)">
+            <img slot="img" :src="item.img">
+            <span slot="title">{{item.title}}</span>
+            <yd-list-other slot="other">
+              <div class="left">
+                <span class="demo-list-price">
+                  <em>¥</em>{{item.price}}</span>
+                <span class="demo-list-del-price">¥{{item.w_price}}</span>
+              </div>
+              <div class="right">content</div>
+            </yd-list-other>
+          </yd-list-item>
+        </yd-list>
+      </yd-tab-panel>
+      <yd-tab-panel label="旅游攻略">
+        <yd-list theme=4>
+          <yd-list-item v-for="(item, key) in list" :key="key" @click.native="goDetail(item)">
+            <img slot="img" :src="item.img">
+            <span slot="title">{{item.title}}</span>
+            <yd-list-other slot="other">
+              <div class="left">
+                <span class="demo-list-price">
+                  <em>¥</em>{{item.price}}</span>
+                <span class="demo-list-del-price">¥{{item.w_price}}</span>
+              </div>
+              <div class="right">content</div>
+            </yd-list-other>
+          </yd-list-item>
+        </yd-list>
+      </yd-tab-panel>
+    </yd-tab>
 
-    <v-footer slot="tabbar" index="3"></v-footer>
   </yd-layout>
 </template>
+
 
 <style scoped>
   .left{
@@ -48,8 +84,8 @@ export default {
     }
   },methods: {
     goDetail:function(item){ 
-      this.$router.push({path:'/guide_news_info',query:{obj:item}});//类似get传参，通过URL传递参数
-    // this.$router.push({path:'/guide_cash_info',params:{obj:item}});//类似post传参 
+      this.$router.push({path:'/visitors_news_info',query:{obj:item}});//类似get传参，通过URL传递参数
+    // this.$router.push({path:'/visitors_cash_info',params:{obj:item}});//类似post传参 
     }
   },
   created () {

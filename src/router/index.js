@@ -7,7 +7,7 @@ export default new Router({
   routes: [, {
       path: '/',
       name: 'index',
-      component: resolve => require(['@/components/guide/home'], resolve)
+      component: resolve => require(['@/components/visitors/home'], resolve)
     },
     //admin
     {
@@ -127,7 +127,13 @@ export default new Router({
       path: '/visitors_complain',
       name: 'visitors_complain',
       component: resolve => require(['@/components/visitors/complain'], resolve)
-    }, {
+    },
+    {
+      path: '/visitors_guide_history',
+      name: 'visitors_guide_history',
+      component: resolve => require(['@/components/visitors/guide_history'], resolve)
+    }, 
+    {
       path: '/visitors_guide_info',
       name: 'visitors_guide_info',
       component: resolve => require(['@/components/visitors/guide_info'], resolve)
