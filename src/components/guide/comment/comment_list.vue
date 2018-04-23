@@ -1,8 +1,13 @@
+
+
+
 <template>
-  <yd-layout> 
-    <v-header slot="navbar" title="投诉列表" to="/guide_home">
+   <yd-layout>
+   
+     <v-header slot="navbar" title="评论列表" to="/guide_home" > 
     </v-header>
-    <yd-list theme=4>
+
+     <yd-list theme=4>
       <yd-list-item v-for="(item, key) in list" :key="key"  @click.native="goDetail(item)">
         <img slot="img" :src="item.img">
         <span slot="title">{{item.title}}</span>
@@ -16,29 +21,16 @@
         </yd-list-other>
       </yd-list-item>
     </yd-list>
-
-    <v-footer slot="tabbar" index="3"></v-footer>
-  </yd-layout>
+    
+    <v-footer  slot="tabbar" index="2"></v-footer>
+  </yd-layout> 
 </template>
-
-<style scoped>
-  .left{
-    position: absolute;
-    bottom: 0.35em; 
-  }
-  .right{
-    position: absolute;
-    bottom: 0.35em;
-    right: 0;
-  }
-</style>
-
 <script>
-import vHeader from './header'
-import vFooter from './footer'
+import vHeader from './../header'
+import vFooter from './../footer'
 export default {
-  name:"complain_list",
-   components: {
+   name:"guide_comment_list",
+  components: {
     vFooter,
     vHeader
   },
@@ -46,9 +38,10 @@ export default {
     return {
       
     }
-  },methods: {
-    goDetail:function(item){ 
-      this.$router.push({path:'/guide_complain_info',query:{obj:item}});//类似get传参，通过URL传递参数
+  },
+  methods: {
+     goDetail:function(item){ 
+      this.$router.push({path:'/guide_comment_info',query:{obj:item}});//类似get传参，通过URL传递参数
     // this.$router.push({path:'/guide_cash_info',params:{obj:item}});//类似post传参 
     }
   },

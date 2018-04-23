@@ -78,13 +78,13 @@
  }
 </style>
 <script>
-import vHeader from './header'
-import vFooter from './footer'
+import vHeader from './../header'
+import vFooter from './../footer'
 import {
   getPersonInfo
 } from '@/api/guide_api'
 export default {
-  name: "person_info",
+   name:"guide_person_info",
   components: {
     vFooter,
     vHeader

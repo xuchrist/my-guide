@@ -54,10 +54,10 @@
 </style>
 
 <script>
-import vFooter from './footer'
-import vHeader from './header'
+import vFooter from './../footer'
+import vHeader from './../header'
 export default {
-  name:"cash",
+   name:"guide_cash",
   components: {
       vHeader
   },

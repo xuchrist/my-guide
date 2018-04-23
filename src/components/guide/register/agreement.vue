@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import vHeader from './header'
+import vHeader from './../header'
 export default {
-  name:"agreement",
+   name:"guide_agreement",
   components: {
       vHeader
   },

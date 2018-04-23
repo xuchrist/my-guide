@@ -53,7 +53,7 @@
   import vHeader from './header'
   import vFooter from './footer'
   export default {
-    name: "home",
+    name: "guide_home",
     components: {
       vFooter,
       vHeader

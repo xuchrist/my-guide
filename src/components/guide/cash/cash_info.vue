@@ -28,10 +28,10 @@
 
 
 <script>
-import vFooter from './footer'
-import vHeader from './header'
+import vFooter from './../footer'
+import vHeader from './../header'
 export default {
-  name:"cash_info",
+   name:"guide_cash_info",
   components: {
       vHeader
   },

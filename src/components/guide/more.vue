@@ -14,7 +14,7 @@
 import vFooter from './footer'
 import vHeader from './header'
 export default {
-  name:"more",
+  name:"guide_more",
     components: {
     vFooter,
     vHeader

@@ -69,10 +69,10 @@
 <script>
 
 import moment from 'moment'
-import vFooter from './footer'
-import vHeader from './header'
+import vFooter from './../footer'
+import vHeader from './../header'
 export default {
-  name: "cash_list",
+   name:"guide_cash_list",
   components: {
     vFooter,
     vHeader,
