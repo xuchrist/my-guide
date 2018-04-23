@@ -13,11 +13,14 @@
         <span slot="title">{{item.title}}</span>
         <yd-list-other slot="other">
           <div  class="left">
-            <span class="demo-list-price">
+            <span>
               <em>¥</em>{{item.price}}</span>
-            <span class="demo-list-del-price">¥{{item.w_price}}</span>
+            <span >¥{{item.w_price}}</span>
+             <div >
+               test content
+             </div>
           </div>
-          <div class="right">content</div>
+          <div class="right">2018-04-23</div>
         </yd-list-other>
       </yd-list-item>
     </yd-list>

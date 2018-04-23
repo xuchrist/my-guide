@@ -63,17 +63,17 @@ export default {
         {
           icon: "iconfont icon-pinglun",
           name: "评论",
-          link: "/guide_comment_list"
+          link: "/admin_comment_list"
         },
         {
           icon: "iconfont icon-tousu",
           name: "投诉",
-          link: "/guide_complain_list"
+          link: "/admin_complain_list"
         },
         {
           icon: "iconfont icon-tixian",
           name: "提现",
-          link: "/guide_cash_list"
+          link: "/admin_cash_list"
         }
       ]
     };

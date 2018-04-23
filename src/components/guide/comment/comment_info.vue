@@ -1,7 +1,8 @@
 <template>
    <yd-layout>
     <v-header slot="navbar" :title="'详情'" to="/guide_comment_list">
-    </v-header> 
+    </v-header>  
+    
    </yd-layout>
 </template>
 
