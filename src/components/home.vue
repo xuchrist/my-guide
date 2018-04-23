@@ -1,65 +1,26 @@
 <template>
-<yd-layout>
-  <yd-navbar slot="navbar" title="主页">
-    <router-link to="#" slot="left">
-      <yd-navbar-back-icon>返回</yd-navbar-back-icon>
-    </router-link>
-  </yd-navbar>
-  <yd-slider autoplay="3000">
-    <yd-slider-item>
-      <a href="http://www.ydcss.com">
-        <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
-      </a>
-    </yd-slider-item>
-    <yd-slider-item>
-      <a href="http://www.ydcss.com">
-        <img src="http://static.ydcss.com/uploads/ydui/2.jpg">
-      </a>
-    </yd-slider-item>
-    <yd-slider-item>
-      <a href="http://www.ydcss.com">
-        <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
-      </a>
-    </yd-slider-item>
-  </yd-slider>
-  <yd-grids-group rows="5">
-    <yd-grids-item v-for="item in list" :key="item.name" :link="item.link">
-      <i slot="icon" :class="item.icon"></i>
-      <span slot="text">{{item.name}}</span>
-    </yd-grids-item>
-  </yd-grids-group>
-  <yd-rollnotice direction="up" align="right" height="50" autoplay="2000" class="demo-small-pitch">
-                <yd-rollnotice-item>
-                 <span style="color:#F00;"> 荐 </span>荣耀V9 3月超级钜惠！<br/> 
-                </yd-rollnotice-item>
-                <yd-rollnotice-item>
-                  <span style="color:#F00;"> 荐 </span>3.23京东超级品牌日格力盛典<br> 
-                </yd-rollnotice-item>
-                <yd-rollnotice-item>
-                 <span style="color:#F00;"> 荐 </span>京东服饰 早春新品低至7折 <br> 
-                </yd-rollnotice-item>
-            </yd-rollnotice>
-  <yd-tabbar slot="tabbar">
-    <yd-tabbar-item title="主页" link="/" active>
-      <i slot="icon" class="demo-icons-weixin"></i>
-    </yd-tabbar-item>
-    <yd-tabbar-item title="评论查询" link="/test1">
-      <i slot="icon" class="demo-icons-weixin"></i>
-      <yd-badge slot="badge" type="danger">2</yd-badge>
-    </yd-tabbar-item>
-    <yd-tabbar-item title="投诉查询" link="/test2">
-      <i slot="icon" class="demo-icons-contact"></i>
-    </yd-tabbar-item>
-    <yd-tabbar-item title="申请提现" link="/test3" dot>
-      <i slot="icon" class="demo-icons-discover"></i>
-    </yd-tabbar-item>
-    <yd-tabbar-item title="提现记录" link="/test4">
-      <i slot="icon" class="demo-icons-me"></i>
-    </yd-tabbar-item>
-  </yd-tabbar>
-</yd-layout>
+  <yd-layout>
+    <yd-navbar title="陪导测试"> 
+    </yd-navbar>
+    <div style="text-align: center;">
+      <yd-button type="primary" @click.native="goVisitors">游客</yd-button>
+      <yd-button type="primary" @click.native="goGuide">导游</yd-button>
+      <yd-button type="primary" @click.native="goAdmin">管理员</yd-button>
+    </div>
+    <yd-preview :buttons="btns">
+      <yd-preview-header>
+        <div slot="right" style="text-align: center;">测试说明</div>
+      </yd-preview-header>
+
+      <yd-preview-item>
+        <div slot="right" style="text-align: center;text-align-last:initial">点击相应按钮跳转不同页面，开始测试</div>
+      </yd-preview-item>
+    </yd-preview>
+  </yd-layout>
 
 </template>
+
+
 
 
 
@@ -69,33 +30,20 @@ export default {
   components: {},
   data() {
     return {
-      list: [{
-          icon: 'demo-icons-button',
-          name: '评论查询',
-          link: '/button'
-        },
-        {
-          icon: 'demo-icons-dialog',
-          name: '投诉查询',
-          link: '/dialog'
-        },
-        {
-          icon: 'demo-icons-cell',
-          name: '申请提现',
-          link: '/cell'
-        },
-        {
-          icon: 'demo-icons-icons',
-          name: '提现记录',
-          link: '/icons'
-        } 
-
-      ]
-
+       btns: [
+       ]
     };
   },
-  created() {
-    
+  methods: {
+    goVisitors:function(){
+        this.$router.push({ path: '/visitors_home'});
+    },
+    goGuide:function(){
+        this.$router.push({ path: '/guide_home'});
+    },
+    goAdmin:function(){
+        this.$router.push({ path: '/admin_home'});
+    }
   }
 };
 

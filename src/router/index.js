@@ -7,7 +7,7 @@ export default new Router({
   routes: [, {
       path: '/',
       name: 'index',
-      component: resolve => require(['@/components/visitors/home'], resolve)
+      component: resolve => require(['@/components/home'], resolve)
     },
     //admin
     {

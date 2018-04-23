@@ -1,7 +1,7 @@
 <template>
   <yd-layout>
 
-    <v-header slot="navbar" title="主页">
+    <v-header slot="navbar" title="主页"  to="/">
     </v-header>
     <yd-slider autoplay="3000">
       <yd-slider-item>
