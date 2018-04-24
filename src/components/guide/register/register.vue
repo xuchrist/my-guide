@@ -11,8 +11,8 @@
         <yd-input slot="right" :show-clear-icon="false" type="password" v-model="password" placeholder="请输入密码"></yd-input>
       </yd-cell-item>
       <div class="custom_div">
-        <!-- <span class="left">免费注册</span>
-        <span class="right">忘记密码</span> -->
+        <!-- <span class="left">免费注册</span> -->
+        <span class="right" @click="goAgree">协议</span>
         <yd-button size="large" type="primary" class="login1"> 登录</yd-button>
         <yd-button size="large" type="primary" class="login2">短信验证码登录</yd-button>
       </div>
@@ -28,6 +28,11 @@
       return {
         username: "",
         password: ""
+      }
+    },
+    methods: {
+      goAgree:function(){
+          this.$router.push({path:'/guide_agreement'});
       }
     }
   }

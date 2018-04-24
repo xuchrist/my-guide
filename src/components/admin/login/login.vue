@@ -1,7 +1,7 @@
 <template>
   <yd-layout>
     <div class="logo"></div>
-    <yd-cell-group >
+    <yd-cell-group>
       <yd-cell-item>
         <span slot="left">用户名：</span>
         <yd-input slot="right" :show-clear-icon="false" required v-model="username" max="20" placeholder="请输入用户名"></yd-input>
@@ -12,7 +12,7 @@
       </yd-cell-item>
       <div class="custom_div">
         <!-- <span class="left">免费注册</span>
-        <span class="right">忘记密码</span> -->
+          <span class="right">忘记密码</span> -->
         <yd-button size="large" type="primary" class="login1"> 登录</yd-button>
         <yd-button size="large" type="primary" class="login2">短信验证码登录</yd-button>
       </div>
@@ -55,7 +55,7 @@
     border-radius: 30px;
   }
   .custom_div {
- padding: 1em 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
   }
   .custom_div .left {
     color: #333;
@@ -68,7 +68,7 @@
     color: #525252;
     text-align: right;
     font-size: .26rem;
-    float: right; 
+    float: right;
     padding: 0em 0em 2em 0em;
   }
 </style>

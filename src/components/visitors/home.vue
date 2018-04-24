@@ -1,9 +1,7 @@
 <template>
   <yd-layout>
-     
-    <v-header slot="navbar" title="主页" to="/"> 
+    <v-header slot="navbar" title="主页" to="/">
     </v-header>
-
     <yd-slider autoplay="3000">
       <yd-slider-item>
         <a href="http://www.ydcss.com">
@@ -40,62 +38,55 @@
         <span style="color:#F00;"> 荐 </span>京东服饰 早春新品低至7折
         <br>
       </yd-rollnotice-item>
-    </yd-rollnotice> 
-    
-    <v-footer  slot="tabbar"  index="1" ></v-footer>
+    </yd-rollnotice>
+    <v-footer slot="tabbar" index="1"></v-footer>
   </yd-layout>
-
 </template>
 
 
 <script>
-import vHeader from './header'
-import vFooter from './footer'
-export default {
-  name: "home",
-  components: {
-    vFooter,
-    vHeader
-  },
-  data() {
-    return {
-      list: [
-         {
-          icon: "iconfont icon-sousuo",
-          name: "搜索",
-          link: "/visitors_search"
-        }
-        ,
-        {
-          icon: "iconfont icon-pinglun",
-          name: "评论",
-          link: "/visitors_comment"
-        },
-        {
-          icon: "iconfont icon-tousu",
-          name: "投诉",
-          link: "/visitors_complain"
-        },
-        {
-          icon: "iconfont icon-tixian",
-          name: "充值",
-          link: "/visitors_pays"
-        }
-        ,
-        {
-          icon: "iconfont icon-xinwen",
-          name: "新闻",
-          link: "/visitors_news_list"
-        }
-        ,
-       
-        {
-          icon: "iconfont icon-lishijiluweijihuo",
-          name: "搜索记录",
-          link: "/visitors_guide_history"
-        }
-      ]
-    };
-  }
-};
+  import vHeader from './header'
+  import vFooter from './footer'
+  export default {
+    name: "home",
+    components: {
+      vFooter,
+      vHeader
+    },
+    data() {
+      return {
+        list: [{
+            icon: "iconfont icon-sousuo",
+            name: "搜索",
+            link: "/visitors_search"
+          },
+          {
+            icon: "iconfont icon-pinglun",
+            name: "评论",
+            link: "/visitors_comment"
+          },
+          {
+            icon: "iconfont icon-tousu",
+            name: "投诉",
+            link: "/visitors_complain"
+          },
+          {
+            icon: "iconfont icon-tixian",
+            name: "充值",
+            link: "/visitors_pays"
+          },
+          {
+            icon: "iconfont icon-xinwen",
+            name: "新闻",
+            link: "/visitors_news_list"
+          },
+          {
+            icon: "iconfont icon-lishijiluweijihuo",
+            name: "搜索记录",
+            link: "/visitors_guide_history"
+          }
+        ]
+      };
+    }
+  };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <yd-layout>
     <v-header slot="navbar" :title="'评论'" to="/visitors_home">
-    </v-header> 
+    </v-header>
     <v-footer slot="tabbar" index="3"></v-footer>
   </yd-layout>
 </template>

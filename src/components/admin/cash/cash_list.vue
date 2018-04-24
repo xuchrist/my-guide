@@ -5,6 +5,6 @@
 
 <script>
 export default {
-  name:"admin_cash_list"
-}
+  name: "admin_cash_list"
+};
 </script>

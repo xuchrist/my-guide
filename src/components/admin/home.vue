@@ -1,9 +1,7 @@
 <template>
   <yd-layout>
-     
-    <v-header slot="navbar" title="主页"  to="/"> 
+    <v-header slot="navbar" title="主页" to="/">
     </v-header>
-
     <yd-slider autoplay="3000">
       <yd-slider-item>
         <a href="http://www.ydcss.com">
@@ -40,43 +38,40 @@
         <span style="color:#F00;"> 荐 </span>京东服饰 早春新品低至7折
         <br>
       </yd-rollnotice-item>
-    </yd-rollnotice> 
-    
-    <v-footer  slot="tabbar"  index="1" ></v-footer>
+    </yd-rollnotice>
+    <v-footer slot="tabbar" index="1"></v-footer>
   </yd-layout>
-
 </template>
 
 
 <script>
-import vHeader from './header'
-import vFooter from './footer'
-export default {
-  name: "admin_home",
-  components: {
-    vFooter,
-    vHeader
-  },
-  data() {
-    return {
-      list: [
-        {
-          icon: "iconfont icon-pinglun",
-          name: "评论",
-          link: "/admin_comment_list"
-        },
-        {
-          icon: "iconfont icon-tousu",
-          name: "投诉",
-          link: "/admin_complain_list"
-        },
-        {
-          icon: "iconfont icon-tixian",
-          name: "提现",
-          link: "/admin_cash_list"
-        }
-      ]
-    };
-  }
-};
+  import vHeader from './header'
+  import vFooter from './footer'
+  export default {
+    name: "admin_home",
+    components: {
+      vFooter,
+      vHeader
+    },
+    data() {
+      return {
+        list: [{
+            icon: "iconfont icon-pinglun",
+            name: "评论",
+            link: "/admin_comment_list"
+          },
+          {
+            icon: "iconfont icon-tousu",
+            name: "投诉",
+            link: "/admin_complain_list"
+          },
+          {
+            icon: "iconfont icon-tixian",
+            name: "提现",
+            link: "/admin_cash_list"
+          }
+        ]
+      };
+    }
+  };
 </script>

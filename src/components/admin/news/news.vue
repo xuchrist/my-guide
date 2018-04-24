@@ -1,10 +1,10 @@
 <template>
-  
+
 </template>
 
 
 <script>
-export default {
-  name:"admin_news"
-}
+  export default {
+    name: "admin_news"
+  }
 </script>

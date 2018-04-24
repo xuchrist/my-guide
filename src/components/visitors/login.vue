@@ -5,6 +5,6 @@
 </template>
 <script>
 export default {
-  name:"visitor_login"
-}
+  name: "visitor_login"
+};
 </script>

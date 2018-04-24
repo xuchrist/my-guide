@@ -26,7 +26,6 @@
         url: ""
       }
     },
-    created() {
-    }
+    created() {}
   }
 </script>

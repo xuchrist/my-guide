@@ -83,8 +83,7 @@
         console.log(item);
       },
       Del: function(item) {
-        console.log(item);
-        
+        console.log(item); 
       }
     },
     created() {

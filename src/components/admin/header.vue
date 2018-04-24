@@ -7,14 +7,14 @@
 </template>
 <script>
 export default {
-  name:"AdminHeader",
-  props:{
-      title:{
-        default: "标题"
-      },
-      to:{
-          default:'#'
-      }
+  name: "AdminHeader",
+  props: {
+    title: {
+      default: "标题"
+    },
+    to: {
+      default: "#"
+    }
   }
-}
+};
 </script>

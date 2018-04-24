@@ -36,7 +36,7 @@
         </li>
       </ul>
       <ul class="list">
-        <li class="item" v-for="(item,key) in comments" :key="key" >
+        <li class="item" v-for="(item,key) in comments" :key="key">
           <div class="info">
             <div class="author">{{item.name}}</div>
             <time> {{item.time}}</time>
@@ -84,7 +84,6 @@
       },
       Del: function(item) {
         console.log(item);
-        
       }
     },
     created() {

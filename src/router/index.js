@@ -51,7 +51,7 @@ export default new Router({
       path: '/admin_login',
       name: 'admin_login',
       component: resolve => require(['@/components/admin/login/login'], resolve)
-    },  {
+    }, {
       path: '/admin_visitor_list',
       name: 'admin_visitor_list',
       component: resolve => require(['@/components/admin/visitor/visitor_list'], resolve)
@@ -67,12 +67,11 @@ export default new Router({
       path: '/admin_visitor_info',
       name: 'admin_visitor_info',
       component: resolve => require(['@/components/admin/visitor/visitor_info'], resolve)
-    },   {
+    }, {
       path: '/admin_words_setting',
       name: 'admin_words_setting',
       component: resolve => require(['@/components/admin/setting/words_setting'], resolve)
-    }
-    ,   {
+    }, {
       path: '/admin_news_list',
       name: 'admin_news_list',
       component: resolve => require(['@/components/admin/news/news_list'], resolve)
@@ -81,8 +80,7 @@ export default new Router({
       path: '/admin_news_info',
       name: 'admin_news_info',
       component: resolve => require(['@/components/admin/news/news_info'], resolve)
-    }
-    ,
+    },
     {
       path: '/admin_news',
       name: 'admin_news',
@@ -90,6 +88,10 @@ export default new Router({
     }
     //guide
     , {
+      path: '/guide_register',
+      name: 'guide_register',
+      component: resolve => require(['@/components/guide/register/register'], resolve)
+    }, {
       path: '/guide_agreement',
       name: 'guide_agreement',
       component: resolve => require(['@/components/guide/register/agreement'], resolve)
@@ -148,7 +150,7 @@ export default new Router({
       path: '/visitors_guide_history',
       name: 'visitors_guide_history',
       component: resolve => require(['@/components/visitors/guide_history'], resolve)
-    }, 
+    },
     {
       path: '/visitors_guide_info',
       name: 'visitors_guide_info',

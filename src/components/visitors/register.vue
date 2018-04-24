@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-export default {
-  name:"visitor_register"
-}
+    export default {
+        name: "visitor_register"
+    }
 </script>
