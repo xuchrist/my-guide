@@ -72,6 +72,22 @@ export default new Router({
       name: 'admin_words_setting',
       component: resolve => require(['@/components/admin/setting/words_setting'], resolve)
     }
+    ,   {
+      path: '/admin_news_list',
+      name: 'admin_news_list',
+      component: resolve => require(['@/components/admin/news/news_list'], resolve)
+    },
+    {
+      path: '/admin_news_info',
+      name: 'admin_news_info',
+      component: resolve => require(['@/components/admin/news/news_info'], resolve)
+    }
+    ,
+    {
+      path: '/admin_news',
+      name: 'admin_news',
+      component: resolve => require(['@/components/admin/news/news'], resolve)
+    }
     //guide
     , {
       path: '/guide_agreement',

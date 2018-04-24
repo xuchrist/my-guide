@@ -1,312 +1,167 @@
- 
-
-@font-face {
-  font-family: 'demo-icons';
-  src: url('//at.alicdn.com/t/font_87685_gukexhd94cmcxr.ttf') format('truetype');
+.tagscloud {
+  font-family: "Heiti SC";
+  padding: 6px;
+  background: #fff;
+}
+.tagscloud-main {
+  margin: 0;
+  padding: 0;
+}
+.tagscloud-title {
+  font-size: 14px;
+  color: #666;
+  margin: 6px;
+}
+.tagscloud-name {
+  vertical-align: middle;
+  padding: 5px;
+  line-height: 22px;
+  color: #999;
+}
+.tagscloud-main-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.tagscloud-main-ul li {
+  float: left;
+  background-color: #fee;
+  color: #666;
+  margin: 6px 3px;
+  padding: 6px 9px;
+  text-align: center;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  font-size: 12px;
+}
+.tagscloud-comments {
+  margin: 6px;
+}
+.tagscloud-user {
+  line-height: 16px;
+  font-size: 12px;
+  margin: 10px 0;
+  position: relative;
+}
+.tagscloud-content {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  height: 32px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.tagscloud-date {
+  font-size: 10px;
+  padding-top: 8px;
+  color: #999;
+  line-height: 14px;
+}
+.tagscloud-more {
+  text-align: center;
+}
+.tagscloud-more button {
+  width: 107px;
+  height: 24px;
+  margin: 10px auto;
+  border: 1px solid rgba(255, 0, 54, 0.5);
+  color: rgba(255, 0, 54, 0.8);
+  background: #fff;
+  border-radius: 12px;
+  -webkit-appearance: none;
+  text-align: center;
 }
 
-[class^="demo-icons-"]:before, [class*=" demo-icons-"]:before {
-  font-family: 'demo-icons';
-  font-size: .54rem;
+.review-content {
+  color: #051b28;
+  font: 0.12rem/1.5 helvetica;
+  background-color: #fff;
 }
-
-.demo-icons-weixin:before {
-  content: '\e60b';
+.review-content ul.filter {
+  list-style: none;
+  overflow: hidden;
+  padding: 1.2em 0 0.4em;
+  margin: 0 10px;
+  border-bottom: 1px solid #e5e5e5;
 }
-
-.demo-icons-search:before {
-  content: '\e7A9';
-  color: #FF685E;
+.review-content ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-.demo-icons-preview:before {
-  content: '\e7AC';
-  color: #8B78E2;
+.review-content ul.filter li {
+  padding: 2.5% 4.5%;
+  margin: 0 2.3% 3.5% 0;
+  float: left;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  color: #666;
 }
-
-.demo-icons-scrolltab:before {
-  content: '\e7AE';
-  color: #FF685E;
+.review-content ul.filter li.current {
+  background-color: #ff0036;
+  color: #fff;
 }
-
-.demo-icons-scrollnav:before {
-  content: '\e7AD';
-  color: #FF8D20;
+.review-content ul.filter li.tag-product {
+  background-color: #fee;
+  color: #666;
 }
-
-.demo-icons-datetime:before {
-  content: '\e790';
-  color: #3CCD1C;
+.review-content ul.list .item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  margin: 0 10px;
 }
-
-.demo-icons-me:before {
-  content: '\e610';
+.review-content ul.list .item .info {
+  overflow: hidden;
+  margin-bottom: 0.8em;
+  color: #999;
+  margin-top: 5px;
 }
-
-.demo-icons-contact:before {
-  content: '\e60c';
+.review-content ul.list .item .info .author {
+  float: left;
 }
-
-.demo-icons-discover:before {
-  content: '\e611';
+.review-content ul.list .item .info time {
+  float: right;
 }
-
-.demo-icons-phone:before {
-  content: '\e60e';
-  color: #A6A5A5;
-  font-size: .42rem;
+.review-content ul.list .item blockquote {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  word-wrap: break-word;
 }
-
-.demo-icons-tel:before {
-  content: '\e616';
-  color: #A6A5A5;
-  font-size: .42rem;
+.review-content ul.list .item ul.sku {
+  color: #999;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
 }
-
-.demo-icons-like:before {
-  content: '\e60d';
-  color: #A6A5A5;
-  font-size: .42rem;
+.review-content ul.list .item ul.sku li {
+  float: left;
 }
-
-.demo-icons-lightbox:before {
-  content: '\e792';
-  color: #FF8D20;
+.review-content ul.list .item ul.sku li::after {
+  content: ";\3000";
 }
-
-.demo-icons-order:before {
-  content: '\e60f';
-  font-size: .42rem;
-  color: #A6A5A5;
+.delButton {
+  height: 1.3em;
+  border-radius: 1.5em;
+  float: right;
+  margin-bottom: 0.24em;
+  color: #999;
 }
-
-.demo-icons-button:before {
-  content: '\e602';
-  color: #FF685E;
-}
-
-.demo-icons-sendcode:before {
-  content: '\e60a';
-  color: #8B78E2;
-}
-
-.demo-icons-dialog:before {
-  content: '\e603';
-  color: #3CC51E;
-}
-
-.demo-icons-checklist:before {
-  content: '\e7a6';
-  color: #FF8D20;
-}
-
-.demo-icons-keyboard:before {
-  content: '\e613';
-  color: #FC746C;
-}
-
-.demo-icons-step:before {
-  content: '\e7A1';
-  color: #3CCD1C;
-}
-
-.demo-icons-lazyimg:before {
-  content: '\e772';
-  color: #3CCD1C;
-}
-
-.demo-icons-countup:before {
-  content: '\e77c';
-  color: #3CCD1C;
-}
-
-.demo-icons-rollnotice:before {
-  content: '\e782';
-  color: #8B78E2;
-}
-
-.demo-icons-accordion:before {
-  content: '\e78B';
-  color: #8B78E2;
-}
-
-.demo-icons-backtop:before {
-  content: '\e789';
-  color: #FC746C;
-}
-
-.demo-icons-rate:before {
-  content: '\e76e';
-  color: #FC746C;
-}
-
-.demo-icons-timeline:before {
-  content: '\E79F';
-  color: #FC746C;
-}
-
-.demo-icons-countdown:before {
-  content: '\e774';
-  color: #FF8D20;
-}
-
-.demo-icons-popup:before {
-  content: '\e777';
-  color: #8B78E2;
-}
-
-.demo-icons-cell:before {
-  content: '\e600';
-  color: #FC746C;
-}
-
-.demo-icons-tabs:before {
-  content: '\e607';
-  color: #FF8D20;
-}
-
-.demo-icons-list:before {
-  content: '\e605';
-  color: #FF8D20;
-}
-
-.demo-icons-actionsheet:before {
-  content: '\e601';
-  color: #3CCD1C;
-}
-
-.demo-icons-progressbar:before {
-  content: '\e612';
-  color: #FF8D20;
-}
-
-.demo-icons-input:before {
-  content: '\e77F';
-  color: #FF8D20;
-}
-
-.demo-icons-icons:before {
-  content: '\e604';
-  color: #8B78E2;
-}
-
-.demo-icons-tabbar:before {
-  content: '\e606';
-  color: #3CC51E;
-}
-
-.demo-icons-badge:before {
-  content: '\e608';
-  color: #EF4F4F;
-}
-
-.demo-icons-grids:before {
-  content: '\e609';
-  color: #8B78E2;
-}
-
-.demo-icons-slider:before {
-  content: '\e614';
-  color: #8B78E2;
-}
-
-.demo-icons-spinner:before {
-  content: '\e615';
-  color: #FF8D20;
-}
-
-.demo-icons-cityselect:before {
-  content: '\e617';
-  color: #FF685E;
-}
-
-.demo-icons-flexbox:before {
-  content: '\e784';
-  color: #FF685E;
-}
-
-.demo-icons-cr:before {
-  content: '\e787';
-  color: #3CC51E;
-}
- 
-
-@font-face {
-  font-family:'demo-category-icons';
-  src: url('//at.alicdn.com/t/font_1477296366_4593668.ttf') format('truetype');
-}
-
-[class^="demo-icons-category"]:before, [class*=" demo-icons-category"]:before {
-  font-family:'demo-category-icons';
-  font-size: .48rem;
-  color: #5B5D5C;
-}
-
-.demo-icons-category1:before {
-  content: '\E604';
-}
-
-.demo-icons-category2:before {
-  content: '\E602';
-}
-
-.demo-icons-category3:before {
-  content: '\E605';
-}
-
-.demo-icons-category4:before {
-  content: '\E603';
-}
-
-.demo-icons-category5:before {
-  content: '\E607';
-}
-
-.demo-icons-category6:before {
-  content: '\E600';
-}
-
-.demo-icons-category7:before {
-  content: '\E606';
-}
-
-.demo-icons-category8:before {
-  content: '\E601';
-}
-
-
 .demo-loading {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 9999;
-    margin-left: -25px;
-    margin-top: -25px;
-}
-.demo-loading svg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.demo-loading span {
-    color: #cecece;
-    font-size: 12px;
-    width: inherit;
-    height: inherit;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  margin-left: -25px;
+  margin-top: -25px;
+} 
+.demo-loading {
+  margin-bottom: 20px;
 }
