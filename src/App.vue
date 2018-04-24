@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-  @import "./assets/css/demo.css"; 
+    @import "./assets/css/demo.css"; 
     @import "http://at.alicdn.com/t/font_634628_hn5o4ijdsbz3q5mi.css"; 
   /* @import "./assets/fonts/iconfont.css"; */
 </style>

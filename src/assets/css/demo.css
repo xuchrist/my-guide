@@ -146,11 +146,11 @@
   content: ";\3000";
 }
 .delButton {
-  height: 1.3em;
-  border-radius: 1.5em;
-  float: right;
-  margin-bottom: 0.24em;
-  color: #999;
+  height: 1.3em !important;
+  border-radius: 1.5em !important;
+  float: right !important;
+  margin-bottom: 0.24em !important;
+  color: #999 !important;
 }
 .demo-loading {
   width: 50px;
