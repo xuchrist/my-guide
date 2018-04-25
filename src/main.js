@@ -11,20 +11,25 @@ import 'vue-ydui/dist/ydui.rem.css';
 
 import Vuex from 'vuex';
 import axios from 'axios'; 
- 
 
-Vue.config.productionTip = false 
+import "./assets/js/ydui.flexible.js" 
+import '../static/UE/ueditor.config.js'
+import '../static/UE/ueditor.all.min.js'
+import '../static/UE/lang/zh-cn/zh-cn.js'
+import '../static/UE/ueditor.parse.min.js'
+
+Vue.config.productionTip = false
 Vue.use(YDUI);
 Vue.use(Vuex);
- 
+
 const store = new Vuex.Store({
   state: {
-      isLoading: false
+    isLoading: false
   },
   mutations: {
-      updateLoadingStatus(state, isLoading) {
-          state.isLoading = isLoading;
-      }
+    updateLoadingStatus(state, isLoading) {
+      state.isLoading = isLoading;
+    }
   }
 });
 /* eslint-disable no-new */
@@ -32,14 +37,16 @@ new Vue({
   el: '#app',
   store,
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
 
 const FastClick = require('fastclick');
 
 document.addEventListener('DOMContentLoaded', function () {
-    FastClick.attach(document.body);
+  FastClick.attach(document.body);
 }, false);
 
 router.beforeEach((route, redirect, next) => {
