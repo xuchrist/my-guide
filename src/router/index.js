@@ -42,7 +42,7 @@ export default new Router({
     }, {
       path: '/admin_guide_list',
       name: 'admin_guide_list',
-      component: resolve => require(['@/components/admin/guide/guide_list'], resolve)
+      component: resolve => require(['@/components/admin/guide/guide_list'], resolve) 
     }, {
       path: '/admin_home',
       name: 'admin_home',

@@ -3,6 +3,11 @@
     <v-header slot="navbar" title="新闻发布" to="/admin_home">
     </v-header>
     <yd-cell-group>
+      <div>
+        <span>title</span>
+      </div>
+      <yd-cell-item>
+      </yd-cell-item>
       <yd-cell-item>
         <UE slot="right" :defaultMsg=defaultMsg :config=config ref="ue" style="width:100%"></UE>
       </yd-cell-item>
