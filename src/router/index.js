@@ -42,7 +42,7 @@ export default new Router({
     }, {
       path: '/admin_guide_list',
       name: 'admin_guide_list',
-      component: resolve => require(['@/components/admin/guide/guide_list'], resolve) 
+      component: resolve => require(['@/components/admin/guide/guide_list'], resolve)
     }, {
       path: '/admin_home',
       name: 'admin_home',
@@ -183,6 +183,12 @@ export default new Router({
       path: '/visitors_person_info',
       name: 'visitors_person_info',
       component: resolve => require(['@/components/visitors/person_info'], resolve)
+    },
+    {
+      path: '/error',
+      name: 'error',
+      component: resolve => require(['@/components/error'], resolve),
+      children: []
     }
 
   ]

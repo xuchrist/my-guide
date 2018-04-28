@@ -12,6 +12,7 @@ import 'vue-ydui/dist/ydui.rem.css';
 import Vuex from 'vuex';
 import axios from 'axios'; 
 
+import moment from 'moment'
 import "./assets/js/ydui.flexible.js" 
 import '../static/UE/ueditor.config.js'
 import '../static/UE/ueditor.all.min.js'
@@ -21,7 +22,7 @@ import '../static/UE/ueditor.parse.min.js'
 Vue.config.productionTip = false
 Vue.use(YDUI);
 Vue.use(Vuex);
-
+Vue.prototype.$moment=moment;
 const store = new Vuex.Store({
   state: {
     isLoading: false
