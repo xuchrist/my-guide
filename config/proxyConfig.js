@@ -1,8 +1,8 @@
 module.exports = {
   proxy: {
     '/api':{
-        target:'http://jsonplaceholder.typicode.com',
-        changeOrigin:true,
+        target:'http://114.215.195.108:80',
+        changeOrigin: true,
         pathRewrite:{
             '/api':''
         }

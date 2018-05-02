@@ -1,8 +1,9 @@
 import axios from 'axios';
 
 import { url } from './config';
-axios.defaults.baseURL=`${url}`;
-
+//axios.defaults.baseURL=`${url}`;
+axios.defaults.withCredentials=true;
+axios.defaults.baseURL = 'http://list.ydui.org';
 let getDemo = (params) => { 
   return axios.get("", {
     params: params
@@ -13,7 +14,7 @@ let postDemo = (params) => {
 }
 
 let getPersonInfo=(params)=>{
-  return axios.get("posts", {
+  return axios.get("http://jsonplaceholder.typicode.com/posts", {
     params: params
   });
 }
@@ -31,9 +32,16 @@ let uploadPic=function(params){
   return axios.post("",params,config);
 }
 
+let getComplainList=(params)=>{
+  params.type="backposition" 
+  return axios.get("getdata.php", {
+    params: params
+  });
+}
 export {
   getDemo,
   postDemo,
   getPersonInfo,
-  uploadPic
+  uploadPic,
+  getComplainList
 }

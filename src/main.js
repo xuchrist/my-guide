@@ -22,7 +22,7 @@ import '../static/UE/ueditor.parse.min.js'
 Vue.config.productionTip = false
 Vue.use(YDUI);
 Vue.use(Vuex);
-Vue.prototype.$moment=moment;
+Vue.prototype.$moment=moment; 
 const store = new Vuex.Store({
   state: {
     isLoading: false
